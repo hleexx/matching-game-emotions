@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+}
+
+/*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto, auto, auto, auto;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.grid-item {
+	background-color: #e9e1a5;
+	border: 1px solid #000;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*BASIC GRID LAYOUT END*/
