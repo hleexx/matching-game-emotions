@@ -38,6 +38,13 @@ footer {
 
 /*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
 
+#main {
+	display: inline-block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .grid-container {
 	max-width: 800px;
 	display: grid;
