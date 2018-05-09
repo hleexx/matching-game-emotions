@@ -5,6 +5,14 @@ body, html {
 	height: 100%;
 }
 
+header, 
+aside,
+main, 
+div,
+footer {
+	box-sizing: border-box;
+}
+
 /*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
 
 .grid-container {
