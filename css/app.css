@@ -134,8 +134,8 @@ footer {
 /*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
 
 .grid-container {
-	max-width: 800px;
-	min-height: 800px;
+	max-width: 700px;
+	min-height: 700px;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	background-color: #fff;
