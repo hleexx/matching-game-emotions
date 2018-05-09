@@ -13,6 +13,29 @@ footer {
 	box-sizing: border-box;
 }
 
+/* Header */
+
+/* Aside */
+
+.info-list {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 20px 0px 20px 0px;
+	text-align: center;
+}
+
+/* Main including restart button */
+
+.restart-button {
+	width: 200px;
+	margin: 10px;
+	padding: 10px;
+	border: solid 6px #639fb6;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
 /*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
 
 .grid-container {
@@ -33,19 +56,4 @@ footer {
 
 /*BASIC GRID LAYOUT END*/
 
-.restart-button {
-	width: 200px;
-	margin: 10px;
-	padding: 10px;
-	border: solid 6px #639fb6;
-	border-radius: 8px;
-	background-color: #fff;
-}
-
-.info-list {
-	width: 100%;
-	list-style: none;
-	padding: 0;
-	margin: 20px 0px 20px 0px;
-	text-align: center;
-}
+/* Footer */
