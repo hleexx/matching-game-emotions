@@ -75,12 +75,47 @@ footer {
 
 /* Vertical Side Bar - END */
 
+.sidebar {
+	width: 100%;
+	text-align: center;
+}
+
 .info-list {
 	width: 100%;
 	list-style: none;
 	padding: 0;
 	margin: 20px 0px 20px 0px;
 	text-align: center;
+}
+
+.timer {
+	text-align: center;
+	width: 150px;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+	border: solid 6px #639fb6;
+	border-radius: 8px;
+	background-color: #fff
+}
+
+.stars {
+	text-align: center;
+	width: 150px;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+	border: solid 6px #639fb6;
+	border-radius: 8px;
+	background-color: #fff
+}
+
+.moves {
+	text-align: center;
+	width: 150px;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+	border: solid 6px #639fb6;
+	border-radius: 8px;
+	background-color: #fff
 }
 
 /* Main including restart button */
