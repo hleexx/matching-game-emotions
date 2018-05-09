@@ -26,10 +26,6 @@ footer {
 	text-align: right;
 }
 
-.header-text {
-	display: inline-block;
-}
-
 .header-name {
 	text-transform: lowercase;
 	font-weight: 500;
