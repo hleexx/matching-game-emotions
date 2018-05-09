@@ -30,3 +30,11 @@ body {
 	border-radius: 8px;
 	background-color: #fff;
 }
+
+.info-list {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 20px 0px 20px 0px;
+	text-align: center;
+}
