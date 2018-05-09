@@ -15,6 +15,15 @@ footer {
 
 /* Header */
 
+.header {
+	width: 100%;
+	text-align: right;
+}
+
+.header-text {
+	display: inline-block;
+}
+
 /* Aside */
 
 /* Vertical Side Bar - START
