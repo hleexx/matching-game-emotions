@@ -42,7 +42,7 @@ footer {
 	flex-flow: row wrap;
 }
 
-.aside {
+.game-info {
 	order: 1;
 	display: flex;
 	width: 15%;
