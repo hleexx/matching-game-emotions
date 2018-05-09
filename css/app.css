@@ -17,6 +17,35 @@ footer {
 
 /* Aside */
 
+/* Vertical Side Bar - START
+* URL: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* Used some of the code here to manipulate flex properties for the side bar
+*/
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.aside {
+	order: 1;
+	display: flex;
+	width: 15%;
+}
+
+#main {
+	width: 80%;
+	order: 2;
+}
+
+footer {
+	width: 100%;
+	flex-shrink: 0;
+	order: 3;
+}
+
+/* Vertical Side Bar - END */
+
 .info-list {
 	width: 100%;
 	list-style: none;
@@ -37,13 +66,6 @@ footer {
 }
 
 /*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
-
-#main {
-	display: inline-block;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .grid-container {
 	max-width: 800px;
