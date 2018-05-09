@@ -86,8 +86,9 @@ footer {
 /* Main including restart button */
 
 .restart-button {
+	text-align: center;
 	width: 200px;
-	margin: 10px;
+	margin: 0px 0px 0px 590px;
 	padding: 10px;
 	border: solid 6px #639fb6;
 	border-radius: 8px;
