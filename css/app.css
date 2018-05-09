@@ -5,6 +5,7 @@ body {
 /*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
 
 .grid-container {
+	max-width: 800px;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	background-color: #fff;
