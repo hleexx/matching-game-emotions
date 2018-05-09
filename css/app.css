@@ -153,3 +153,7 @@ footer {
 /*BASIC GRID LAYOUT END*/
 
 /* Footer */
+
+.footer {
+	text-align: right;
+}
