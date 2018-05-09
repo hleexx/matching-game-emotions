@@ -30,6 +30,15 @@ footer {
 	display: inline-block;
 }
 
+.header-name {
+	text-transform: lowercase;
+	font-weight: 500;
+	font-size: 36px;
+	margin: 30px 30px 0px 0px;
+	display: inline-block;
+	color: #58595b;
+}
+
 /* Aside */
 
 /* Vertical Side Bar - START
