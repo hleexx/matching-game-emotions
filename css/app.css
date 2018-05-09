@@ -13,6 +13,12 @@ footer {
 	box-sizing: border-box;
 }
 
+.wrapper {
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Header */
 
 .header {
