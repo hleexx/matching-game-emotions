@@ -39,6 +39,15 @@ footer {
 	color: #58595b;
 }
 
+.header-sub {
+	text-transform: lowercase;
+	font-weight: 100;
+	font-size: 28px;
+	margin: 0px 30px 30px 0px;
+	display: block;
+	color: #58595b;
+}
+
 /* Aside */
 
 /* Vertical Side Bar - START
