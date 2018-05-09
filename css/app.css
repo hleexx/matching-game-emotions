@@ -5,6 +5,12 @@ body, html {
 	height: 100%;
 }
 
+body {
+	font-family: Jua;
+	font-size: 14px;
+	color: #58595b;
+}
+
 header, 
 aside,
 main, 
