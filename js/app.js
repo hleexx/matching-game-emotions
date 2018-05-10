@@ -1,4 +1,4 @@
-$(function)() {
+$(function() {
 	
 	// function for timer
 
@@ -24,4 +24,4 @@ $(function)() {
 
 	document.getElementsbyClassName("timer").innerHTML = seconds;
 	
-}
+})
