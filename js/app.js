@@ -2,26 +2,28 @@ $(function() {
 	
 	// function for timer
 
-	// let interval = setInterval(function(){ myTimer() }, 1000);
-
-	// function myTimer() {
-	// 	var s = new Date();
-	// 	var t = d.toLocaleTimeString();
-	// 	document.getElementbyId("timer").innerHTML = t;
-	// }
-
-	// let seconds = 0;
-	// let minutes = 0;
-
-	// function startTime() {
-	// 	var m = minutes++
-	// 	var s = seconds++
-	// 	document.getElementsbyClassName("timer").innerHTML = ${m} : ${s};
-	// 	var t = setTimeout(function(){startTimer()}, 500);
-	// }
-
 	let seconds = 0;
+	let minutes = 0;
 
-	document.getElementsbyClassName("timer").innerHTML = seconds;
+	function formatTime(num) {
+		if (num < 10) {
+			return `0${num}`;
+		} else { 
+			return `${num}`;
+		}
+	}
+
+	document.getElementsByClassName("timer")[0].innerHTML = `${formatTime(minutes)} : ${formatTime(seconds)}`;
+
+	setInterval(function() {
+		seconds++;
+		if (seconds == 60) {
+			minutes++;
+			seconds = 0;
+		}
+
+		document.getElementsByClassName("timer")[0].innerHTML = `${formatTime(minutes)} : ${formatTime(seconds)}`;
+
+	}, 1000)
 	
 })
