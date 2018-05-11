@@ -74,6 +74,8 @@ $(function() {
 		}
 	})
 
+	//restart button -- need to add shuffle
+
 	$(".restart-button").on("click", function() {
 		$(".card-item").hide();
 		moves = 0;
