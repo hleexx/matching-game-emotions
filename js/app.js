@@ -39,11 +39,20 @@ $(function() {
 	}
 
 	$(".grid-item").on("click", function(event) {
-		moves++;
 
+		// move counter text
+
+		moves++;
 		$(".moves").text(singularMoveText(moves));
+
+		// flipping cardz
+
+		$(".card-item").show();
+
 
 
 	})
+
+
 	
 })
