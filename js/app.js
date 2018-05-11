@@ -38,6 +38,8 @@ $(function() {
 		}
 	}
 
+	let lastSelectedCard = null;
+
 	$(".grid-item").on("click", function(event) {
 
 		// move counter text
@@ -45,13 +47,26 @@ $(function() {
 		moves++;
 		$(".moves").text(singularMoveText(moves));
 
-		// flipping cardz
+		// flip card + matching
 
-		$(event.currentTarget).children(".card-item").toggle();
+		if (lastSelectedCard == null) {
+			$(event.currentTarget).children(".card-item").show();
+			lastSelectedCard = $(event.currentTarget).children(".card-item");
+		} else {
+			if (lastSelectedCard.data("attribute") == $(event.currentTarget).data("attribute")) {
+				$(event.currentTarget).children(".card-item").show();
+				lastSelectedCard = null;
+			} else {
+				$(event.currentTarget).children(".card-item").show();
+				$(event.currentTarget).children(".card-item").hide();
+				lastSelectedCard.hide();
+				lastSelectedCard = null;
+			}
 
-
+		}
 
 	})
+
 
 
 	
