@@ -13,7 +13,7 @@ $(function() {
 		}
 	}
 
-	document.getElementsByClassName("timer")[0].innerHTML = `${formatTime(minutes)} : ${formatTime(seconds)}`;
+	$(".timer").text(`${formatTime(minutes)} : ${formatTime(seconds)}`);
 
 	setInterval(function() {
 		seconds++;
@@ -22,8 +22,14 @@ $(function() {
 			seconds = 0;
 		}
 
-		document.getElementsByClassName("timer")[0].innerHTML = `${formatTime(minutes)} : ${formatTime(seconds)}`;
+		$(".timer").text(`${formatTime(minutes)} : ${formatTime(seconds)}`);
 
 	}, 1000)
+
+	// function for move counter
+
+	$(".grid-item").on("click", function(event) {
+
+	})
 	
 })
