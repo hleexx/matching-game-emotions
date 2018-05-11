@@ -43,7 +43,7 @@ $(function() {
 
 
 	$(".grid-item").on("click", function(event) {
-		debugger;
+		//debugger;
 
 		if ($(event.currentTarget).children(".card-item").css('display') == 'none') {
 
