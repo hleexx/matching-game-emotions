@@ -74,6 +74,14 @@ $(function() {
 		}
 	})
 
+	$(".restart-button").on("click", function() {
+		$(".card-item").hide();
+		moves = 0;
+		$(".moves").text(singularMoveText(moves));
+		seconds = 0;
+		minutes = 0;
+		$(".timer").text(`${formatTime(minutes)} : ${formatTime(seconds)}`);
+	})
 
 
 	
