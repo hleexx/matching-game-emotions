@@ -27,6 +27,7 @@ $(function() {
 	}, 1000)
 
 	// function for move counter - need to do it for 2 flips of a card
+	// if there are exactly two clicks in any grid-item then it equals 1 move (move++)
 
 	let moves = 0;
 
@@ -40,31 +41,37 @@ $(function() {
 
 	let lastSelectedCard = null;
 
+
 	$(".grid-item").on("click", function(event) {
 
-		// move counter text
+		if ($(event.currentTarget).children(".card-item").css('display') == 'none') {
 
-		moves++;
-		$(".moves").text(singularMoveText(moves));
+			// flip card + matching
 
-		// flip card + matching
-
-		if (lastSelectedCard == null) {
-			$(event.currentTarget).children(".card-item").show();
-			lastSelectedCard = $(event.currentTarget).children(".card-item");
-		} else {
-			if (lastSelectedCard.data("attribute") == $(event.currentTarget).data("attribute")) {
+			if (lastSelectedCard == null) {
 				$(event.currentTarget).children(".card-item").show();
-				lastSelectedCard = null;
+				lastSelectedCard = $(event.currentTarget);
 			} else {
-				$(event.currentTarget).children(".card-item").show();
-				$(event.currentTarget).children(".card-item").hide();
-				lastSelectedCard.hide();
-				lastSelectedCard = null;
+				if (lastSelectedCard.data("attribute") == $(event.currentTarget).data("attribute")) {
+					$(event.currentTarget).children(".card-item").show();
+					lastSelectedCard = null;
+				} else {
+					$(event.currentTarget).children(".card-item").show();
+					setTimeout(function() {
+						$(event.currentTarget).children(".card-item").hide();
+						lastSelectedCard.children(".card-item").hide();
+						lastSelectedCard = null;
+
+					}, 500);
+
+				}
+				
+				// move counter text
+
+				moves++;
+				$(".moves").text(singularMoveText(moves));
 			}
-
 		}
-
 	})
 
 

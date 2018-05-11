@@ -36,7 +36,7 @@ footer {
 	text-transform: lowercase;
 	font-weight: 500;
 	font-size: 36px;
-	margin: 30px 30px 0px 0px;
+	margin: 10px 30px 0px 0px;
 	display: inline-block;
 	color: #58595b;
 }
@@ -45,7 +45,7 @@ footer {
 	text-transform: lowercase;
 	font-weight: 100;
 	font-size: 28px;
-	margin: 0px 30px 30px 0px;
+	margin: 0px 30px 10px 0px;
 	display: block;
 	color: #58595b;
 }
@@ -84,7 +84,7 @@ footer {
 .sidebar {
 	width: 100%;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: -20px;
 }
 
 .info-list {
@@ -100,9 +100,9 @@ footer {
 	width: 150px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px;
-	border: solid 6px #639fb6;
+	border: solid 6px #809BCE;
 	border-radius: 8px;
-	background-color: #fff
+	background-color: #fff;
 }
 
 .stars {
@@ -110,7 +110,7 @@ footer {
 	width: 150px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px;
-	border: solid 6px #639fb6;
+	border: solid 6px #809BCE;
 	border-radius: 8px;
 	background-color: #fff
 }
@@ -120,39 +120,40 @@ footer {
 	width: 150px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px;
-	border: solid 6px #639fb6;
+	border: solid 6px #809BCE;
 	border-radius: 8px;
 	background-color: #fff
 }
 
-/* Main including restart button */
-
 .restart-button {
 	text-align: center;
-	width: 200px;
-	margin: 0px 0px 0px 490px;
+	width: 150px;
+	margin: 0px 0px 20px 0px;
 	padding: 10px;
-	border: solid 6px #639fb6;
+	border: solid 6px #809BCE;
 	border-radius: 8px;
-	background-color: #fff;
+	background-color: #fff
 }
+
+/* Main */
 
 /*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
 
 .grid-container {
-	max-width: 700px;
-	min-height: 700px;
+	max-width: 620px;
 	display: grid;
-	grid-template-columns: auto auto auto auto;
-	background-color: #000;
+	grid-template-rows: 150px 150px 150px 150px ;
+	grid-template-columns: 150px 150px 150px 150px ;
+	background: linear-gradient(to bottom left, #CFBAE1, #97F9F9, #A4DEF9, #C1E0F7);
 	border-radius: 10px;
 	padding: 10px;
 }
 
 .grid-item {
-	background-color: #e9e1a5;
+	background-color: #809BCE;
+	max-width: 100%;
+	max-height: 100%;
 	border-radius: 10px;
-	font-size: 30px;
 	text-align: center;
 	margin: 10px;
 }
@@ -160,10 +161,16 @@ footer {
 .card-item {
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: #809BCE;
 	border-radius: 10px;
 	display: none;
 
+}
+
+.card-item img {
+	width: 80%;
+	max-height: 80%;
+	margin-top: 13px;
 }
 
 /*BASIC GRID LAYOUT END*/
