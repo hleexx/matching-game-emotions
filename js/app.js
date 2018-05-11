@@ -26,7 +26,7 @@ $(function() {
 
 	}, 1000)
 
-	// function for move counter
+	// function for move counter - need to do it for 2 flips of a card
 
 	let moves = 0;
 
