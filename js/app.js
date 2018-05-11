@@ -47,7 +47,7 @@ $(function() {
 
 		// flipping cardz
 
-		$(".card-item").show();
+		$(event.currentTarget).children(".card-item").toggle();
 
 
 
