@@ -28,7 +28,21 @@ $(function() {
 
 	// function for move counter
 
+	let moves = 0;
+
+	function singularMoveText(num) {
+		if (num === 1) {
+			return `${num} move`;
+		} else {
+			return `${num} moves`;
+		}
+	}
+
 	$(".grid-item").on("click", function(event) {
+		moves++;
+
+		$(".moves").text(singularMoveText(moves));
+
 
 	})
 	
