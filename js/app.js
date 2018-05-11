@@ -43,6 +43,7 @@ $(function() {
 
 
 	$(".grid-item").on("click", function(event) {
+		debugger;
 
 		if ($(event.currentTarget).children(".card-item").css('display') == 'none') {
 
@@ -83,6 +84,7 @@ $(function() {
 		seconds = 0;
 		minutes = 0;
 		$(".timer").text(`${formatTime(minutes)} : ${formatTime(seconds)}`);
+		lastSelectedCard = null;
 	})
 
 
