@@ -75,11 +75,14 @@ $(function() {
 				// star rating
 
 				if (moves <= 12) {
-					$(".stars").text("***");
+					$(".one-star").show();
+					$(".two-stars").hide();
+					$(".three-stars").hide();
 				} else if (moves <= 17) {
-					$(".stars").text("**");
+					$(".two-stars").show();
+					$(".three-stars").hide();
 				} else {
-					$(".stars").text("*");
+					$(".three-stars").show();
 				}
 			}
 		}
