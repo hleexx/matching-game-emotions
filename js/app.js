@@ -45,7 +45,7 @@ $(function() {
 	$(".grid-item").on("click", function(event) {
 		//debugger;
 
-		if ($(event.currentTarget).children(".card-item").css('display') == 'none') {
+		if ($(event.currentTarget).children(".card-item").css("display") == "none") {
 
 			// flip card + matching
 
@@ -71,6 +71,16 @@ $(function() {
 
 				moves++;
 				$(".moves").text(singularMoveText(moves));
+
+				// star rating
+
+				if (moves <= 12) {
+					$(".stars").text("***");
+				} else if (moves <= 17) {
+					$(".stars").text("**");
+				} else {
+					$(".stars").text("*");
+				}
 			}
 		}
 	})
