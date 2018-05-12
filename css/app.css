@@ -115,6 +115,18 @@ footer {
 	background-color: #fff
 }
 
+.one-star img {
+	width: 25px;
+}
+
+.two-stars img {
+	width: 25px;
+}
+
+.three-stars img {
+	width: 25px;
+}
+
 .moves {
 	text-align: center;
 	width: 150px;
