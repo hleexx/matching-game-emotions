@@ -1,6 +1,6 @@
 $(function() {
 	
-	// function for timer
+	// function for timer -- TODO: need to add stop timer when player matches everything
 
 	let seconds = 0;
 	let minutes = 0;
@@ -47,7 +47,7 @@ $(function() {
 
 		if ($(event.currentTarget).children(".card-item").css("display") == "none") {
 
-			// flip card + matching
+			// flip card + matching -- TODO: need to add modal to congratulate player and let them know how much time it took to win and their star rating.
 
 			if (lastSelectedCard == null) {
 				$(event.currentTarget).children(".card-item").show();
@@ -89,7 +89,7 @@ $(function() {
 		}
 	})
 
-	//restart button -- need to add shuffle
+	//restart button -- TODO: need to add shuffle
 
 	$(".restart-button").on("click", function() {
 		$(".card-item").hide();

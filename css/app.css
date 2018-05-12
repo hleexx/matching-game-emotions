@@ -115,14 +115,20 @@ footer {
 	background-color: #fff;
 }
 
+.one-star {
+	display: none;
+}
+
 .one-star img {
 	width: 20px;
+}
+
+.two-stars {
 	display: none;
 }
 
 .two-stars img {
 	width: 20px;
-	display: none;
 }
 
 .three-stars img {
