@@ -48,7 +48,7 @@ $(function() {
 	function perfectMatchModal() {
 		perfectMatch++;
 		if (perfectMatch === 8) {
-			$(".modal").show();
+			$(".modal-backdrop").show();
 		}
 	}
 
@@ -84,19 +84,22 @@ $(function() {
 
 				moves++;
 				$(".moves").text(singularMoveText(moves));
+				$(".moves-final").text(singularMoveText(moves));
 
 				// star rating
 
 				if (moves <= 12) {
 					$(".three-stars").show();
+					$(".stars-final").text("3 stars")
 				} else if (moves <= 17) {
 					$(".three-stars").hide();
 					$(".two-stars").show();
-					console.log("hello!")
+					$(".stars-final").text("2 stars")
 				} else {
 					$(".two-stars").hide();
 					$(".three-stars").hide();
 					$(".one-star").show();
+					$(".stars-final").text("1 star")
 				}
 			}
 		}

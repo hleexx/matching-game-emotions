@@ -182,7 +182,7 @@ footer {
 /* Modal Backdrop */
 
 .modal-backdrop {
-	/*display: none;*/
+	display: none;
 	position: fixed;
 	z-index: 1; /* sits on top */
 	padding: 200px;
@@ -197,12 +197,12 @@ footer {
 
 .modal-content {
 	background-color: #fff;
+	font-size: 16px;
 	text-align: center;
 	margin: auto;
-	padding: 20px;
-	border: solid 10px #809BCE;
+	padding: 5px 15px 20px 10px;
 	border-radius: 15px;
-	width: 80%;
+	width: 70%;
 }
 
 .close {
@@ -219,6 +219,13 @@ footer {
 	cursor: pointer;
 }
 
+.congrats {
+	font-size: 20px;
+	color: #809BCE;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
 .moves-final,
 .stars-final {
 	font-weight: bold;
@@ -226,14 +233,17 @@ footer {
 }
 
 .replay-button {
-	float: center;
+	display: inline-block;
+	font-family: Jua;
+	font-size: 16px;
+	color: #fff;
 	text-align: center;
 	width: 100px;
 	margin: 0px;
 	padding: 10px;
-	border: solid 6px #809BCE;
+	border: solid 1px #809BCE;
 	border-radius: 8px;
-	background-color: #fff
+	background-color: #809BCE;
 }
 
 /* Modal - END */
