@@ -95,46 +95,8 @@ footer {
 	text-align: center;
 }
 
-.timer {
-	text-align: center;
-	width: 150px;
-	margin: 0px 0px 20px 0px;
-	padding: 10px;
-	border: solid 6px #809BCE;
-	border-radius: 8px;
-	background-color: #fff;
-}
-
-.stars {
-	text-align: center;
-	width: 150px;
-	margin: 0px 0px 20px 0px;
-	padding: 10px;
-	border: solid 6px #809BCE;
-	border-radius: 8px;
-	background-color: #fff;
-}
-
-.one-star {
-	display: none;
-}
-
-.one-star img {
-	width: 20px;
-}
-
-.two-stars {
-	display: none;
-}
-
-.two-stars img {
-	width: 20px;
-}
-
-.three-stars img {
-	width: 20px;
-}
-
+.timer,
+.stars,
 .moves {
 	text-align: center;
 	width: 150px;
@@ -142,7 +104,22 @@ footer {
 	padding: 10px;
 	border: solid 6px #809BCE;
 	border-radius: 8px;
-	background-color: #fff
+	background-color: #fff;
+}
+
+.one-star,
+.two-stars {
+	display: none;
+}
+
+.one-star img,
+.two-stars img,
+.three-stars img {
+	width: 20px;
+}
+
+.two-stars {
+	display: none;
 }
 
 .restart-button {
@@ -157,7 +134,9 @@ footer {
 
 /* Main */
 
-/*BASIC GRID LAYOUT from: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
+/* Basic Grid Layout from:
+*https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+*/
 
 .grid-container {
 	max-width: 620px;
@@ -193,7 +172,7 @@ footer {
 	margin-top: 13px;
 }
 
-/*BASIC GRID LAYOUT END*/
+/*Basic Grid Layout - END*/
 
 /* Modal - START
 * URL: https://www.w3schools.com/howto/howto_css_modals.asp
@@ -205,7 +184,7 @@ footer {
 .modal-backdrop {
 	display: none;
 	position: fixed;
-	z-index: 1; /* Sits on top */
+	z-index: 1; /* sits on top */
 	padding: 200px;
 	left: 0;
 	top: 0;
@@ -221,10 +200,43 @@ footer {
 	text-align: center;
 	margin: auto;
 	padding: 20px;
-	border: solid 6px #809BCE;
-	border-radius: 8px;
+	border: solid 10px #809BCE;
+	border-radius: 15px;
 	width: 80%;
 }
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #809BCE;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.moves-final,
+.stars-final {
+	font-weight: bold;
+	color: #809BCE;
+}
+
+.replay-button {
+	float: center;
+	text-align: center;
+	width: 100px;
+	margin: 0px;
+	padding: 10px;
+	border: solid 6px #809BCE;
+	border-radius: 8px;
+	background-color: #fff
+}
+
+/* Modal - END */
 
 /* Footer */
 
