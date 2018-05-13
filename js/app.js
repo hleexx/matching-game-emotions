@@ -57,23 +57,23 @@ $(function() {
 	$(".grid-item").on("click", function(event) {
 		//debugger;
 
-		if ($(event.currentTarget).children(".card-item").css("display") == "none") {
+		if ($(event.currentTarget).children(".card-back").css("display") == "none") {
 
 			// flip card + matching
 
 			if (lastSelectedCard == null) {
-				$(event.currentTarget).children(".card-item").show();
+				$(event.currentTarget).children(".card-back").show();
 				lastSelectedCard = $(event.currentTarget);
 			} else {
 				if (lastSelectedCard.data("attribute") == $(event.currentTarget).data("attribute")) {
-					$(event.currentTarget).children(".card-item").show();
+					$(event.currentTarget).children(".card-back").show();
 					lastSelectedCard = null;
 					perfectMatchModal();
 				} else {
-					$(event.currentTarget).children(".card-item").show();
+					$(event.currentTarget).children(".card-back").show();
 					setTimeout(function() {
-						$(event.currentTarget).children(".card-item").hide();
-						lastSelectedCard.children(".card-item").hide();
+						$(event.currentTarget).children(".card-back").hide();
+						lastSelectedCard.children(".card-back").hide();
 						lastSelectedCard = null;
 
 					}, 500);
@@ -108,7 +108,7 @@ $(function() {
 	// function for restart button -- TODO: need to add shuffle
 
 	function resetGame() {
-		$(".card-item").hide();
+		$(".card-back").hide();
 		moves = 0;
 		$(".moves").text(singularMoveText(moves));
 		seconds = 0;
