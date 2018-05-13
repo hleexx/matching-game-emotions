@@ -102,7 +102,7 @@ footer {
 	width: 150px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px;
-	border: solid 6px #809BCE;
+	border: solid 6px #7493cf;
 	border-radius: 8px;
 	background-color: #fff;
 }
@@ -118,16 +118,12 @@ footer {
 	width: 20px;
 }
 
-.two-stars {
-	display: none;
-}
-
 .restart-button {
 	text-align: center;
 	width: 150px;
 	margin: 0px 0px 20px 0px;
 	padding: 10px;
-	border: solid 6px #809BCE;
+	border: solid 6px #7493cf;
 	border-radius: 8px;
 	background-color: #fff
 }
@@ -160,7 +156,7 @@ footer {
 .card-item {
 	width: 100%;
 	height: 100%;
-	background-color: #809BCE;
+	background-color: #7493cf;
 	border-radius: 10px;
 	display: none;
 
@@ -214,14 +210,14 @@ footer {
 
 .close:hover,
 .close:focus {
-	color: #809BCE;
+	color: #7493cf;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .congrats {
 	font-size: 20px;
-	color: #809BCE;
+	color: #7493cf;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
@@ -229,7 +225,7 @@ footer {
 .moves-final,
 .stars-final {
 	font-weight: bold;
-	color: #809BCE;
+	color: #7493cf;
 }
 
 .replay-button {
@@ -241,9 +237,9 @@ footer {
 	width: 100px;
 	margin: 0px;
 	padding: 10px;
-	border: solid 1px #809BCE;
+	border: solid 1px #7493cf;
 	border-radius: 8px;
-	background-color: #809BCE;
+	background-color: #7493cf;
 }
 
 /* Modal - END */

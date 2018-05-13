@@ -1,6 +1,6 @@
 $(function() {
 	
-	// function for timer -- TODO: need to add stop timer when player matches everything
+	// function for timer
 
 	let seconds = 0;
 	let minutes = 0;
@@ -52,14 +52,14 @@ $(function() {
 		}
 	}
 
-	// event listener on click
+	// grid-item event listener on click
 
 	$(".grid-item").on("click", function(event) {
 		//debugger;
 
 		if ($(event.currentTarget).children(".card-item").css("display") == "none") {
 
-			// flip card + matching -- TODO: need to add modal to congratulate player and let them know how much time it took to win and their star rating.
+			// flip card + matching
 
 			if (lastSelectedCard == null) {
 				$(event.currentTarget).children(".card-item").show();
@@ -80,13 +80,13 @@ $(function() {
 
 				}
 				
-				// move counter text
+				// move counter display text
 
 				moves++;
 				$(".moves").text(singularMoveText(moves));
 				$(".moves-final").text(singularMoveText(moves));
 
-				// star rating
+				// star rating display
 
 				if (moves <= 12) {
 					$(".three-stars").show();
@@ -105,33 +105,37 @@ $(function() {
 		}
 	})
 
-	// restart button -- TODO: need to add shuffle
+	// function for restart button -- TODO: need to add shuffle
 
-	$(".restart-button").on("click", function() {
+	function resetGame() {
 		$(".card-item").hide();
 		moves = 0;
 		$(".moves").text(singularMoveText(moves));
 		seconds = 0;
 		minutes = 0;
 		$(".timer").text(`${formatTime(minutes)} : ${formatTime(seconds)}`);
+		$(".one-star").hide();
+		$(".two-stars").hide();
+		$(".three-stars").show();
 		lastSelectedCard = null;
+	}
+
+	$(".restart-button").on("click", function() {
+		resetGame();
 	})
 
-	// modal close button
+	// modal close button event listener
 
 	$(".close").on("click", function() {
 		$(".modal-backdrop").hide();
 	})
 
-	// modal closes when anywhere on page is clicked
+	// modal play again button event listener
 
-	// $(window).on("click", function(event) {
-	// 	if ($(event.Target).hasClass("modal-backdrop")) {
-	// 		$(".modal-backdrop").hide();
-	// 	}
-	// })
-
-	// modal play again button
+	$(".replay-button").on("click", function() {
+		resetGame();
+		$(".modal-backdrop").hide();
+	})
 
 
 	
