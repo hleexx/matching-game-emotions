@@ -105,7 +105,7 @@ $(function() {
 		}
 	})
 
-	//restart button -- TODO: need to add shuffle
+	// restart button -- TODO: need to add shuffle
 
 	$(".restart-button").on("click", function() {
 		$(".card-item").hide();
@@ -116,6 +116,22 @@ $(function() {
 		$(".timer").text(`${formatTime(minutes)} : ${formatTime(seconds)}`);
 		lastSelectedCard = null;
 	})
+
+	// modal close button
+
+	$(".close").on("click", function() {
+		$(".modal-backdrop").hide();
+	})
+
+	// modal closes when anywhere on page is clicked
+
+	// $(window).on("click", function(event) {
+	// 	if ($(event.Target).hasClass("modal-backdrop")) {
+	// 		$(".modal-backdrop").hide();
+	// 	}
+	// })
+
+	// modal play again button
 
 
 	
