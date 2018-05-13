@@ -57,23 +57,29 @@ $(function() {
 	$(".grid-item").on("click", function(event) {
 		//debugger;
 
-		if ($(event.currentTarget).children(".card-back").css("display") == "none") {
+		console.log($(event.currentTarget).children(".flipper").css("transform"));
+
+		if ($(event.currentTarget).children(".flipper").css("transform") == "matrix(1, 0, 0, 1, 0, 0)") {
+
+			console.log("help");
 
 			// flip card + matching
 
+			$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
+
 			if (lastSelectedCard == null) {
-				$(event.currentTarget).children(".card-back").show();
+				$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
 				lastSelectedCard = $(event.currentTarget);
 			} else {
 				if (lastSelectedCard.data("attribute") == $(event.currentTarget).data("attribute")) {
-					$(event.currentTarget).children(".card-back").show();
+					$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
 					lastSelectedCard = null;
 					perfectMatchModal();
 				} else {
-					$(event.currentTarget).children(".card-back").show();
+					$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
 					setTimeout(function() {
-						$(event.currentTarget).children(".card-back").hide();
-						lastSelectedCard.children(".card-back").hide();
+						$(event.currentTarget).children(".flipper").css("transform", "rotateY(0deg)");
+						lastSelectedCard.children(".flipper").css("transform", "rotateY(0deg)");
 						lastSelectedCard = null;
 
 					}, 500);
@@ -108,7 +114,7 @@ $(function() {
 	// function for restart button -- TODO: need to add shuffle
 
 	function resetGame() {
-		$(".card-back").hide();
+		$(".flipper").css("transform", "rotateY(0deg)");
 		moves = 0;
 		$(".moves").text(singularMoveText(moves));
 		seconds = 0;
