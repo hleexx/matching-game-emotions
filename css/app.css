@@ -195,6 +195,37 @@ footer {
 
 /*BASIC GRID LAYOUT END*/
 
+/* Modal - START
+* URL: https://www.w3schools.com/howto/howto_css_modals.asp
+* Used code to figure out modal back drop code and modal code structure
+*/
+
+/* Modal Backdrop */
+
+.modal-backdrop {
+	display: none;
+	position: fixed;
+	z-index: 1; /* Sits on top */
+	padding: 200px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	background-color: #fff;
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+	border: solid 6px #809BCE;
+	border-radius: 8px;
+	width: 80%;
+}
+
 /* Footer */
 
 .footer {
