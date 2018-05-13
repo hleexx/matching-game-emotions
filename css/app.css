@@ -145,7 +145,7 @@ footer {
 }
 
 .grid-item {
-	background-color: #809BCE;
+	/*background-color: #809BCE;*/
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: 10px;
@@ -158,7 +158,7 @@ footer {
 	height: 100%;
 	background-color: #7493cf;
 	border-radius: 10px;
-	display: none;
+	/*display: none;*/
 
 }
 
@@ -167,6 +167,56 @@ footer {
 	max-height: 80%;
 	margin-top: 13px;
 }
+
+/* Card Flip Animation */
+
+/* entire container, keeps perspective */
+.grid-item {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.grid-item:hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.card-front {
+	width: 100%;
+	height: 100%;
+	background-color: #809BCE;
+}
+
+/* flip speed goes here */
+.flipper {
+	width: 100%;
+	height: 100%;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.card-front, .card-item {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.card-front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.card-item {
+	transform: rotateY(180deg);
+}
+
+/* Flip animation - END */
 
 /*Basic Grid Layout - END*/
 
