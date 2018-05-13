@@ -41,6 +41,18 @@ $(function() {
 
 	let lastSelectedCard = null;
 
+	// function to display congratulatory modal when all 8 pairs have been matched
+
+	let perfectMatch = 0;
+
+	function perfectMatchModal() {
+		perfectMatch++;
+		if (perfectMatch === 8) {
+			$(".modal").show();
+		}
+	}
+
+	// event listener on click
 
 	$(".grid-item").on("click", function(event) {
 		//debugger;
@@ -56,6 +68,7 @@ $(function() {
 				if (lastSelectedCard.data("attribute") == $(event.currentTarget).data("attribute")) {
 					$(event.currentTarget).children(".card-item").show();
 					lastSelectedCard = null;
+					perfectMatchModal();
 				} else {
 					$(event.currentTarget).children(".card-item").show();
 					setTimeout(function() {

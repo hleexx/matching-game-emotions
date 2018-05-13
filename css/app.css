@@ -182,7 +182,7 @@ footer {
 /* Modal Backdrop */
 
 .modal-backdrop {
-	display: none;
+	/*display: none;*/
 	position: fixed;
 	z-index: 1; /* sits on top */
 	padding: 200px;
