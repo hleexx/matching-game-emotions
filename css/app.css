@@ -25,7 +25,7 @@ footer {
 	margin-right: auto;
 }
 
-/* Header */
+/* header */
 
 .header {
 	width: 100%;
@@ -50,11 +50,11 @@ footer {
 	color: #58595b;
 }
 
-/* Aside */
+/* aside */
 
-/* Vertical Side Bar - START
+/* vertical side bar - START
 * URL: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-* Used some of the code here to manipulate flex properties for the side bar
+* used some of the code here to manipulate flex properties for the side bar
 */
 
 .wrapper {
@@ -79,7 +79,8 @@ footer {
 	order: 3;
 }
 
-/* Vertical Side Bar - END */
+/* vertical side bar - END */
+
 
 .sidebar {
 	width: 100%;
@@ -128,10 +129,10 @@ footer {
 	background-color: #fff
 }
 
-/* Main */
+/* main */
 
-/* Basic Grid Layout from:
-*https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+/* basic grid layout - START
+* URL: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
 */
 
 .grid-container {
@@ -145,7 +146,6 @@ footer {
 }
 
 .grid-item {
-	/*background-color: #809BCE;*/
 	max-width: 100%;
 	max-height: 100%;
 	text-align: center;
@@ -174,16 +174,19 @@ footer {
 	margin-top: 13px;
 }
 
-/* Card Flip Animation - START
+/* basic grid layout - END */
+
+
+/* card flip animation - START
 * URL: https://davidwalsh.name/css-flip
-* Used for flip animation foundation */
+* used for flip animation foundation */
 
 /* entire container, keeps perspective */
 .grid-item {
 	perspective: 1000px;
 }
 
-/* flip speed goes here */
+/* flip speed */
 .flipper {
 	width: 100%;
 	height: 100%;
@@ -213,21 +216,18 @@ footer {
 	transform: rotateY(180deg);
 }
 
-/* Card Flip animation - END */
+/* card flip animation - END */
 
-/*Basic Grid Layout - END*/
 
-/* Modal - START
+/* modal - START
 * URL: https://www.w3schools.com/howto/howto_css_modals.asp
-* Used code to figure out modal back drop code and modal code structure
+* used code to figure out modal back drop code and modal code structure
 */
-
-/* Modal Backdrop */
 
 .modal-backdrop {
 	display: none;
 	position: fixed;
-	z-index: 1; /* sits on top */
+	z-index: 1;
 	padding: 200px;
 	left: 0;
 	top: 0;
@@ -289,9 +289,10 @@ footer {
 	background-color: #7493cf;
 }
 
-/* Modal - END */
+/* modal - END */
 
-/* Footer */
+
+/* footer */
 
 .footer {
 	text-align: left;
