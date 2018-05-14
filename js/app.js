@@ -66,6 +66,7 @@ $(function() {
 		$(".grid-item").on("click", function(event) {
 
 			//flip card animation initiated by stating the starting css and the rotation for the flip
+			// URL: https://davidwalsh.name/demo/css-flip.php
 
 			if ($(event.currentTarget).children(".flipper").css("transform") == "matrix(1, 0, 0, 1, 0, 0)") {
 				$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
@@ -139,7 +140,7 @@ $(function() {
 
 	shuffleCards();
 
-	// shuffling functio - START
+	// shuffling function - START
 	// URL: https://stackoverflow.com/questions/13427287/shuffle-all-divs-with-the-same-class
 	// based the code off the example shown here
 
