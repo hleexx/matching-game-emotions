@@ -1,16 +1,24 @@
+
 # Matching Game: Emotions
 
 A memory game that focuses on matching the same emotions. The goal of the game is to match all 8 pairs of emotions in the least amount of moves (8 moves) with the highest star rating (3 stars) in the shortest amount of time. The 8 pairs of emotions are based on the universal emotions: anger, happiness, sadness, surprise, disgust, fear, contentment and -- one fun throw in -- confusion. Do you remember how the last card you flipped felt? Are you on the same page?
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+#### Clone the repository
 
-EDIT HEREEEEEEE-git clone
+1. Navigate to the main page of this repository on GitHub
+2. Under the repository name 'Matching Game: Emotions', click **Clone** or **Download**
+3. Copy the clone URL from the HTTPs section using the icon to copy
+4. Open your terminal
+5. Change the current working directory to the location where you want the cloned directory to be made
+6. Type `git clone` and then paste the URL that you copied in step 2
+7. Press enter and your clone will be created
+8. You now have a local copy on your computer where you can edit the code
 
 ### Prerequisites
 
-No preqs or dependeneices needed
+No prerequisites or dependencies needed
 
 ### Installing
 
