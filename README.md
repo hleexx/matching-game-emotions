@@ -8,7 +8,7 @@ A memory game that focuses on matching the same emotions. The goal of the game i
 #### Clone the repository
 
 1. Navigate to the main page of this repository on GitHub
-2. Under the repository name 'matching game: emotions', click **Clone** or **Download**
+2. Under the repository name 'matching-game-emotions', click **Clone** or **Download**
 3. Copy the clone URL from the HTTPs section using the icon to copy
 4. Open your terminal
 5. Change the current working directory to the location where you want the cloned directory to be made
