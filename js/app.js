@@ -57,13 +57,11 @@ $(function() {
 	$(".grid-item").on("click", function(event) {
 		//debugger;
 
-		console.log($(event.currentTarget).children(".flipper").css("transform"));
+		//flip card animation
 
 		if ($(event.currentTarget).children(".flipper").css("transform") == "matrix(1, 0, 0, 1, 0, 0)") {
 
-			console.log("help");
-
-			// flip card + matching
+			// matching
 
 			$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
 
@@ -73,16 +71,27 @@ $(function() {
 			} else {
 				if (lastSelectedCard.data("attribute") == $(event.currentTarget).data("attribute")) {
 					$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
+
+					// matched animation
+
+					lastSelectedCard.children(".flipper").effect("bounce", {times:2, distance:250}, 400);
+					$(event.currentTarget).children(".flipper").effect("bounce", {times:2, distance:250}, 400);
+
 					lastSelectedCard = null;
 					perfectMatchModal();
 				} else {
 					$(event.currentTarget).children(".flipper").css("transform", "rotateY(180deg)");
-					setTimeout(function() {
+
+					// not-a-match animation before flipping back over
+
+					$(event.currentTarget).children(".flipper").effect("shake", {times:2, distance:100}, 150, function () {
 						$(event.currentTarget).children(".flipper").css("transform", "rotateY(0deg)");
+					});
+
+					lastSelectedCard.children(".flipper").effect("shake", {times:2, distance:100}, 150, function () {
 						lastSelectedCard.children(".flipper").css("transform", "rotateY(0deg)");
 						lastSelectedCard = null;
-
-					}, 500);
+					})
 
 				}
 				
@@ -119,10 +128,12 @@ $(function() {
 		$(".moves").text(singularMoveText(moves));
 		seconds = 0;
 		minutes = 0;
+		perfectMatch = 0;
 		$(".timer").text(`${formatTime(minutes)} : ${formatTime(seconds)}`);
 		$(".one-star").hide();
 		$(".two-stars").hide();
 		$(".three-stars").show();
+		$(".modal-backdrop").hide();
 		lastSelectedCard = null;
 	}
 
@@ -140,7 +151,6 @@ $(function() {
 
 	$(".replay-button").on("click", function() {
 		resetGame();
-		$(".modal-backdrop").hide();
 	})
 
 

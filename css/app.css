@@ -174,7 +174,9 @@ footer {
 	margin-top: 13px;
 }
 
-/* Card Flip Animation */
+/* Card Flip Animation - START
+* URL: https://davidwalsh.name/css-flip
+* Used for flip animation foundation */
 
 /* entire container, keeps perspective */
 .grid-item {
@@ -211,7 +213,7 @@ footer {
 	transform: rotateY(180deg);
 }
 
-/* Flip animation - END */
+/* Card Flip animation - END */
 
 /*Basic Grid Layout - END*/
 
