@@ -8,11 +8,7 @@ $(function() {
 	let minutes = 0;
 
 	function formatTime(num) {
-		if (num < 10) {
-			return `0${num}`;
-		} else { 
-			return `${num}`;
-		}
+		return num < 10 ? `0${num}` : `${num}`;
 	}
 
 	// timer display text
@@ -21,7 +17,7 @@ $(function() {
 
 	// when it hits 60 seconds, it turns into 1 minute
 
-	setInterval(function() {
+	let myTimer = setInterval(function() {
 		seconds++;
 		if (seconds == 60) {
 			minutes++;
@@ -39,11 +35,12 @@ $(function() {
 	let moves = 0;
 
 	function singularMoveText(num) {
-		num === 1 ? `${num} move` : `${num} moves`;
+		return num === 1 ? `${num} move` : `${num} moves`;
 	}
 
 	// congratulatory modal function
 	// when all 8 pairs have been matched the modal is displayed
+	// final time displayed in modal before time clear
 
 	let perfectMatch = 0;
 
@@ -51,6 +48,8 @@ $(function() {
 		perfectMatch++;
 		if (perfectMatch === 8) {
 			$(".modal-backdrop").show();
+			$(".timer-final").text(`${minutes} min and ${seconds} secs`);
+			clearInterval(myTimer);
 		}
 	}
 
@@ -103,6 +102,7 @@ $(function() {
 					}
 					
 					// move counter display text
+					// in both display and modal
 					// inside the event listener because the value dependent on matching in .grid-item
 
 					moves++;
@@ -110,6 +110,7 @@ $(function() {
 					$(".moves-final").text(singularMoveText(moves));
 
 					// star rating display
+					// in both display and modal
 					// shows 3 stars at first then hides stars after 13 moves and 17 moves
 					// inside the event listener because the value dependent on matching in .grid-item
 					// also dependent on the move counter
@@ -166,6 +167,7 @@ $(function() {
 		$(".flipper").css("transform", "rotateY(0deg)");
 		moves = 0;
 		$(".moves").text(singularMoveText(moves));
+		clearInterval(myTimer);
 		seconds = 0;
 		minutes = 0;
 		perfectMatch = 0;

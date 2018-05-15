@@ -217,7 +217,7 @@ footer {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	padding: 200px;
+	padding: 200px 0px 0px 0px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -259,7 +259,8 @@ footer {
 }
 
 .moves-final,
-.stars-final {
+.stars-final,
+.timer-final {
 	font-weight: bold;
 	color: #7493cf;
 }
