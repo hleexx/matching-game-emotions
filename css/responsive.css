@@ -1,9 +1,198 @@
-/* For Mobile - Nexus 5 (landscape, 360px and up) */
+/* For Mobile - Nexus 5 (portrait, 360px and up) */
 
-@media screen and (orientation: landscape) and (min-width: 360px) {
+@media screen and (orientation: portrait) and (min-width: 360px) {
+
+	.wrapper {
+		max-width: 360px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* header */
+
+	.header-name {
+		font-size: 20px;
+		margin: 10px auto auto auto;
+	}
+
+	.header-sub {
+		font-size: 16px;
+		margin: auto auto 10px auto;
+	}
+
+	/* aside */
+
+	.game-info {
+		order: 2;
+		display: flex;
+		width: 100%;
+	}
+
+	.main {
+		width: 100%;
+		order: 1;
+	}
+
+	.footer {
+	width: 100%;
+	text-align: center;
+	flex-shrink: 1;
+	order: 3;
 }
 
-/* For Tablet - iPad (portrait and landscape, 800px and up) */
+	.timer,
+	.stars,
+	.moves,
+	.restart-button {
+		text-align: center;
+		width: 80%;
+		margin: 0px auto 10px auto;
+		padding: 10px;
+	}
 
-@media screen and (orientation: landscape) and (min-width: 800px) {
+	.one-star img,
+	.two-stars img,
+	.three-stars img {
+		width: 20px;
+	}
+
+
+	/* main */
+
+	.grid-container {
+		max-width: 300px;
+		grid-template-rows: 73px 73px 73px 73px ;
+		grid-template-columns: 73px 73px 73px 73px ;
+		padding: 5px;
+		margin: auto auto 20px auto;
+	}
+
+	.grid-item {
+		margin: 5px;
+	}
+
+	.card-back img {
+		margin-top: 8px;
+	}
+
+	/* modal */
+
+	.modal-backdrop {
+		padding: 100px 0px 0px 0px;
+	}
+
+	.close {
+		color: #aaa;
+		float: right;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	/* footer */
+
+	.footer {
+		margin-top: -15px;
+		margin-bottom: 10px;
+	}
+
+}
+
+/* For Tablet - iPad (portrait and portrait, 700px and up) */
+
+@media screen and (orientation: portrait) and (min-width: 700px, max-width: 1024px) {
+
+	.wrapper {
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* header */
+
+	.header-name {
+		font-size: 36px;
+		margin: 10px auto auto auto;
+	}
+
+	.header-sub {
+		font-size: 28px;
+		margin: auto auto 10px auto;
+	}
+
+	/* aside */
+
+	.game-info {
+		order: 2;
+		display: flex;
+		width: 100%;
+	}
+
+	.main {
+		width: 100%;
+		order: 1;
+	}
+
+	.footer {
+	width: 100%;
+	text-align: center;
+	flex-shrink: 1;
+	order: 3;
+}
+
+	.timer,
+	.stars,
+	.moves,
+	.restart-button {
+		text-align: center;
+		width: 85%;
+		margin: 0px auto 10px auto;
+		padding: 10px;
+	}
+
+	.one-star img,
+	.two-stars img,
+	.three-stars img {
+		width: 20px;
+	}
+
+
+	/* main */
+
+	.grid-container {
+		max-width: 620px;
+		grid-template-rows: 150px 150px 150px 150px ;
+		grid-template-columns: 150px 150px 150px 150px ;
+		padding: 10px;
+		margin: auto auto 20px auto;
+	}
+
+	.grid-item {
+		margin: 10px;
+	}
+
+	.card-back img {
+		margin-top: 13px;
+	}
+
+	/* modal */
+
+	.modal-backdrop {
+		padding: 300px 0px 0px 0px;
+	}
+
+	.close {
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	/* footer */
+
+	.footer {
+		margin-top: -15px;
+		margin-bottom: 10px;
+	}
+
+}
 }

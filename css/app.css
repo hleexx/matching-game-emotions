@@ -7,7 +7,7 @@ body, html {
 
 body {
 	font-family: Jua;
-	font-size: 14px;
+	font-size: 16px;
 	color: #58595b;
 }
 
@@ -98,7 +98,8 @@ footer {
 
 .timer,
 .stars,
-.moves {
+.moves,
+.restart-button {
 	text-align: center;
 	width: 150px;
 	margin: 0px 0px 20px 0px;
@@ -117,16 +118,6 @@ footer {
 .two-stars img,
 .three-stars img {
 	width: 20px;
-}
-
-.restart-button {
-	text-align: center;
-	width: 150px;
-	margin: 0px 0px 20px 0px;
-	padding: 10px;
-	border: solid 6px #7493cf;
-	border-radius: 8px;
-	background-color: #fff
 }
 
 /* main */
@@ -164,8 +155,6 @@ footer {
 	height: 100%;
 	background-color: #7493cf;
 	border-radius: 10px;
-	/*display: none;*/
-
 }
 
 .card-back img {
@@ -295,5 +284,5 @@ footer {
 /* footer */
 
 .footer {
-	text-align: left;
+	text-align: center;
 }
