@@ -39,11 +39,7 @@ $(function() {
 	let moves = 0;
 
 	function singularMoveText(num) {
-		if (num === 1) {
-			return `${num} move`;
-		} else {
-			return `${num} moves`;
-		}
+		num === 1 ? `${num} move` : `${num} moves`;
 	}
 
 	// congratulatory modal function
@@ -146,7 +142,7 @@ $(function() {
 
 	function shuffleCards() {
         // remove all divs within .grid-container, store in $d
-        var $d = $(".grid-container").find(".grid-item").remove();
+        let $d = $(".grid-container").find(".grid-item").remove();
         // sort $d randomnly with fisher yates shuffle
         $d.sort(function () { return Math.floor(Math.random() * $d.length); });
         // append divs within $d to .grid-container again

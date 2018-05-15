@@ -1,0 +1,9 @@
+/* For Mobile - Nexus 5 (landscape, 360px and up) */
+
+@media screen and (orientation: landscape) and (min-width: 360px) {
+}
+
+/* For Tablet - iPad (portrait and landscape, 800px and up) */
+
+@media screen and (orientation: landscape) and (min-width: 800px) {
+}

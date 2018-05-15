@@ -68,7 +68,7 @@ footer {
 	width: 20%;
 }
 
-#main {
+.main {
 	width: 80%;
 	order: 2;
 }
